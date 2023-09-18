@@ -217,7 +217,7 @@
 	<!-- ===========Banner Section start Here========== -->
 	<section class="" style="background-image: url(./Rounder.mp4);">
 		<div class="video-background">
-			<video id="myVideo" src="./Rounder.mp4" autoplay loop>
+			<video id="myVideo" src="./Rounder.mp4" autoplay>
 				Your browser does not support the video tag.
 			</video>
 		</div>
@@ -225,18 +225,18 @@
 	<!-- ===========Banner Section Ends Here========== -->
 
 	<script>
-		const video = document.getElementById('myVideo');
-		let loopCount = 0;
+        const video = document.getElementById('myVideo');
+        let loopCount = 0;
 
-		video.addEventListener('ended', function () {
-			loopCount++;
-			if (loopCount < 2) {
-				video.play();
-			} else {
-				video.muted = true; // Mute the video after the second play
-			}
-		});
-	</script>
+        video.addEventListener('ended', function () {
+            if (loopCount < 2) {
+                video.play();
+                loopCount++;
+            } else {
+                video.muted = true; // Mute the video after the second play
+            }
+        });
+    </script>
 
 
 	<!-- ===========Game Section Ends Here========== -->
