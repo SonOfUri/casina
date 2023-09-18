@@ -21,9 +21,9 @@
 
 	<style>
 		@media screen and (max-width: 70px) {
-			.header-section{
-			height: 70px;
-		}
+			.header-section {
+				height: 70px;
+			}
 		}
 
 		.u-class-1 {
@@ -131,8 +131,8 @@
 										<a href="#about">About</a>
 
 									</li>
-									
-									
+
+
 								</ul>
 								<a href="#" class="login"> <span>CHART</span> </a>
 								<a href="#" class="signup"> <span>BUY NOW</span></a>
@@ -169,7 +169,10 @@
 						</h2>
 						<h2>Telegram Casino?</h2>
 						<p>
-							Rounders Telegram Casino is one of the many franchises that will be powered by Javelin Games.  At Rounders, we are determined to give our players  some the most high quality gaming experiences globally, using both our website and Telegram. If you want to be treated like royalty, play at Rounders.
+							Rounders Telegram Casino is one of the many franchises that will be powered by Javelin
+							Games. At Rounders, we are determined to give our players some the most high quality gaming
+							experiences globally, using both our website and Telegram. If you want to be treated like
+							royalty, play at Rounders.
 
 						</p>
 						<a href="https://t.me/TheRoundersCasino" class="default-button"><span>Play Now <i
@@ -210,24 +213,6 @@
 		}
 	</style>
 
-<script>
-	const video = document.getElementById('myVideo');
-	let loopCount = 0;
-
-	// Add an event listener to the 'ended' event of the video
-	video.addEventListener('ended', () => {
-		loopCount++;
-
-		// Check if the video has looped three times
-		if (loopCount < 2) {
-			// If not, play the video again
-			video.play();
-		} else {
-			// If it has looped three times, remove the loop attribute to stop further looping
-			video.removeAttribute('loop');
-		}
-	});
-</script>
 
 	<!-- ===========Banner Section start Here========== -->
 	<section class="" style="background-image: url(./Rounder.mp4);">
@@ -239,7 +224,19 @@
 	</section>
 	<!-- ===========Banner Section Ends Here========== -->
 
+	<script>
+		const video = document.getElementById('myVideo');
+		let loopCount = 0;
 
+		video.addEventListener('ended', function () {
+			loopCount++;
+			if (loopCount < 2) {
+				video.play();
+			} else {
+				video.muted = true; // Mute the video after the second play
+			}
+		});
+	</script>
 
 
 	<!-- ===========Game Section Ends Here========== -->
@@ -374,12 +371,12 @@
 			</div>
 		</div>
 		<div class="footer-middle padding-top padding-bottom">
-			
 
-				<iframe width="400" height="720" frameborder="0"
-					allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
-					src="https://flooz.xyz/embed/trade?swapDisabled=false&swapToTokenAddress=0xB8cB60d07056d54DF518785de9600bD4E6B2B53b&swapLockToToken=true&onRampDisabled=false&onRampAsDefault=false&onRampTokenAddress=0xB8cB60d07056d54DF518785de9600bD4E6B2B53b&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=true&primaryColor=%235e38f4&backgroundColor=transparent&roundedCorners=15&padding=20"></iframe>
-	
+
+			<iframe width="400" height="720" frameborder="0"
+				allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
+				src="https://flooz.xyz/embed/trade?swapDisabled=false&swapToTokenAddress=0xB8cB60d07056d54DF518785de9600bD4E6B2B53b&swapLockToToken=true&onRampDisabled=false&onRampAsDefault=false&onRampTokenAddress=0xB8cB60d07056d54DF518785de9600bD4E6B2B53b&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=true&primaryColor=%235e38f4&backgroundColor=transparent&roundedCorners=15&padding=20"></iframe>
+
 		</div>
 		<div class="footer-bottom">
 			<div class="container">
