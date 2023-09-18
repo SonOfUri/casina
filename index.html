@@ -210,6 +210,25 @@
 		}
 	</style>
 
+<script>
+	const video = document.getElementById('myVideo');
+	let loopCount = 0;
+
+	// Add an event listener to the 'ended' event of the video
+	video.addEventListener('ended', () => {
+		loopCount++;
+
+		// Check if the video has looped three times
+		if (loopCount < 2) {
+			// If not, play the video again
+			video.play();
+		} else {
+			// If it has looped three times, remove the loop attribute to stop further looping
+			video.removeAttribute('loop');
+		}
+	});
+</script>
+
 	<!-- ===========Banner Section start Here========== -->
 	<section class="" style="background-image: url(./Rounder.mp4);">
 		<div class="video-background">
@@ -220,24 +239,7 @@
 	</section>
 	<!-- ===========Banner Section Ends Here========== -->
 
-	<script>
-		const video = document.getElementById('myVideo');
-		let loopCount = 0;
 
-		// Add an event listener to the 'ended' event of the video
-		video.addEventListener('ended', () => {
-			loopCount++;
-
-			// Check if the video has looped three times
-			if (loopCount < 2) {
-				// If not, play the video again
-				video.play();
-			} else {
-				// If it has looped three times, remove the loop attribute to stop further looping
-				video.removeAttribute('loop');
-			}
-		});
-	</script>
 
 
 	<!-- ===========Game Section Ends Here========== -->
